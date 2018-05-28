@@ -2,6 +2,7 @@
 5/4/18
 '''
 from tkinter import *
+from tkinter import messagebox
 import ast
 try:
     file = open("filev4.txt","r")
@@ -37,23 +38,23 @@ def isValidNumber(checkme):
     try:
         pets = float(e2.get())
     except:
-        messagebox.showerror("title" + checkme +" Is not a valid number")
+        messagebox.showerror("title", checkme +" Is not a valid number")
     try:
         sibs = float(e3.get())
     except:
-        messagebox.showerror("title" + checkme +" Is not a valid number")
+        messagebox.showerror("title", checkme +" Is not a valid number")
     try:
         games = float(e4.get())
     except:
-        messagebox.showerror("title" + checkme +" Is not a valid number")
+        messagebox.showerror("title", checkme +" Is not a valid number")
     try:
         movies = float(e5.get())
     except:
-        messagebox.showerror("title" + checkme +" Is not a valid number")
+        messagebox.showerror("title", checkme +" Is not a valid number")
     try:
         age = float(e6.get())
     except:
-        messagebox.showerror("title" + checkme +" Is not a valid number")
+        messagebox.showerror("title", checkme +" Is not a valid number")
 def sumbitInput():
     name = e1.get()
     if name == "" or name in data:
