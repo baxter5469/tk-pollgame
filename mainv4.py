@@ -3,7 +3,6 @@
 '''
 from tkinter import *
 import ast
-data = {}
 try:
     file = open("filev4.txt","r")
     data = file.read()
@@ -36,11 +35,25 @@ e6.grid(row=5, column=1)
 
 def isValidNumber(checkme):
     try:
-        checkme = float(checkme)
-        return True
+        pets = float(e2.get())
     except:
         messagebox.showerror("title" + checkme +" Is not a valid number")
-        return False
+    try:
+        sibs = float(e3.get())
+    except:
+        messagebox.showerror("title" + checkme +" Is not a valid number")
+    try:
+        games = float(e4.get())
+    except:
+        messagebox.showerror("title" + checkme +" Is not a valid number")
+    try:
+        movies = float(e5.get())
+    except:
+        messagebox.showerror("title" + checkme +" Is not a valid number")
+    try:
+        age = float(e6.get())
+    except:
+        messagebox.showerror("title" + checkme +" Is not a valid number")
 def sumbitInput():
     name = e1.get()
     if name == "" or name in data:
